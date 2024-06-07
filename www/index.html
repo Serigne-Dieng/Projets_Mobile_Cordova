@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ToDoList</title>
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+    <script src="lib/jquery.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+	<div data-role="page">
+        <div data-role="header">
+            <h1>
+               Todo List App
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form action="">
+                <label for="tache">Ajouter une tache</label>
+                <input type="text" id="tache" placeholder="Nouvelle tache">
+                <input type="button" id="addButton" value="Ajouter">
+                <input type="button" id="resetButton" value="Reinitialiser">
+            </form>
+            <div data-role="header" data-theme="b" class="titre">
+                <h1>
+                   En Cours
+                </h1>
+            </div>
+            <ul id="taskList" data-role="listview" data-inset="true">
+            </ul>
+            <div data-role="header" data-theme="b" class="titre">
+                <h1>
+                   Terminées
+                </h1>
+            </div>
+            <ul id="taskListDone" data-role="listview" data-inset="true">
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Serigne Mansor Dieng &copy; 2024</h1>
+        </div>
+    </div>
+</body>
+</html>

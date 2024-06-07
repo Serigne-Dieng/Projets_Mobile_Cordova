@@ -1,0 +1,12 @@
+label
+{
+    text-align: center;
+}
+.done
+{
+    text-decoration: line-through;
+}
+
+.titre{
+    background-color: #082180;
+}
